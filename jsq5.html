@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Adding Rows</title>
+</head>
+<body>
+
+    <div id="POItablediv">
+    <table id="POITable" border="1">
+        <tr>
+            <td>Student Id</td>
+            <td>Name</td>
+              <td>Add Rows?</td>
+        </tr>
+        <tr>
+            <td><input type="text" /></td>
+            <td><input  type="text" id="latbox" /></td>
+              <td><input type="button" id="addmorePOIbutton" value="Add More POIs" onclick="insRow()"/></td>
+        </tr>
+    </table>
+</div>
+    <script>
+  
+
+
+function insRow()
+{
+    var x=document.getElementById('POITable').insertRow(1);
+    var c1=x.insertCell(0);
+    var c2=x.insertCell(1);
+    c1.innerHTML="New Attribute";
+    c2.innerHTML="New Attribute";
+}
+
+    </script>
+
+</body>
+</html>

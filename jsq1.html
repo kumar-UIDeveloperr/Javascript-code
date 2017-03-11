@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    Click the button to Display Decimal value:<input type="button" value="Button" onclick="myfun1();"  />
+    <p id="p1" ></p>
+    <script>
+        function myfun1()
+        {
+            var binary = "1101";
+            var digit = parseInt(binary, 2);
+            document.getElementById("p1").innerHTML = digit;
+        }
+
+    </script>
+</body>
+</html>

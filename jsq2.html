@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+   Press the click button to generate Random Integers: <input type="button" value="Click" onclick="random();" />
+    <p id="p1"></p>
+    <script>
+        function random() {
+            var n = 100;
+            for (var i = 0; i < n; i++) {
+                var value = Math.floor((Math.random() * n) + 1);
+                document.getElementById("p1").innerHTML = value;
+            }
+        }
+    </script>
+</body>
+</html>

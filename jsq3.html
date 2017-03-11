@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+   Press the click button to Find Maximum value: <input type="button" value="Click" onclick="maximum();" />
+    <p id="p1"></p>
+    <script>
+        function maximum() {
+            var numbers = [1, 200, 3, 40];
+           var maximum= Math.max.apply(null, numbers)
+           //var minimum= Math.min.apply(null, numbers) 
+           document.getElementById("p1").innerHTML = maximum;
+           
+
+            
+        }
+    </script>
+</body>
+</html>

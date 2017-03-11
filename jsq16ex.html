@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript" >
+
+        /*var people = {
+    "p1": {
+        "name": "Prasad D","getName": function () { return this.name;}
+    },
+        "p2": {
+        "name": "Harsha Vardhan","age": 39,"getName": function () { return this.name;}
+    },
+        "p3": {
+        "NAME": "Anna Smith","age": "24","getName": function () {return this.NAME;}
+    },
+        "p4": {
+        "name": "Peter Jones","age": null,"getName": function () {return this.name;}
+    }
+}
+
+function getItemById(anArray,name){
+ for (var i = 0; i < anArray.length; i += 1) {
+        if (anArray[i].name === name) {
+            return anArray[i];
+        }
+    }
+}
+var theName = getItemById(people["p1"], 1).name;
+    document.write(theName);
+
+
+        */
+
+
+       var data = {
+            items1: [{ id: 1, name: 'sai' }, { id: 2, name: 'bar' }],
+            items2: [{ id: 3, name: 'foo' }, { id: 4, name: 'ram' }]
+        };
+    function getItemById(anArray, id) {
+    for (var i = 0; i < anArray.length; i += 1) {
+        if (anArray[i].id === id) {
+            return anArray[i];
+        }
+    }
+}
+
+    var theName = getItemById(data['items1'], 1).name;
+    document.write(theName);
+        </script>
+</body>
+</html>

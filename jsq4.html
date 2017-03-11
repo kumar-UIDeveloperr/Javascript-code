@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        form
+        {
+            background-color:#ff0000;
+            color:#ffd800;
+        }
+
+    </style>
+</head>
+<body>
+
+    <form><br>
+Enter your First Name: <input type="text" id="firstname"/><br><br>
+Enter your Last Name: <input type="text" id="lastname"/><br><br>
+<input type="submit" value="Submit" onclick="formdata();"/><br>
+</form>
+    <script>
+        function formdata() {
+            var firstname1 = document.getElementById("firstname").value;
+            var lastname1 = document.getElementById("lastname").value;
+            document.writeln("Thank you for completing this Form <br><br>");
+            document.writeln("The First Name you Entered is :  " + firstname1 + "<br>");
+            document.writeln("The Last Name you Entered is :  " + lastname1);
+        }
+</script>
+</body>
+</html>

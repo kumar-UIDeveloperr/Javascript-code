@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    Press the button to open new window: <input type="button" value="Button" onclick="myfun1();" />
+    <p id="p1"></p>
+    <script type="text/javascript">
+        function myfun1()
+        {
+            var x = window.open("https://www.facebook.com/");
+            document.getElementById("p1").innerhtml = x;
+
+        }
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <div id="printableArea">
+      <h1></h1>
+</div>
+    
+<input type="button" onclick="printDiv('printableArea')" value="print a div!" />
+    <img src="http://www.planwallpaper.com/static/images/canberra_hero_image_JiMVvYU.jpg" />
+    <script type="text/javascript">
+        
+        function printDiv(divName) {
+            var printContents = document.getElementById(divName).innerHTML;
+            var originalContents = document.body.innerHTML;
+
+            document.body.innerHTML = printContents;
+
+            window.print();
+
+            document.body.innerHTML = originalContents;
+        }
+        </script>
+</body>
+</html>

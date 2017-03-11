@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+
+    <select id="states" style="width: 120px">
+    <option value="1">Illinois</option>
+    <option value="2">California</option>
+    <option value="3">Florida</option>
+    <option value="4">Alaska</option>
+    <option value="5">Alabama</option>
+    <option value="6">Michigan</option>
+    <option value="7">Texas</option>
+    <option value="8">Virginia</option>
+    <option value="9">Georgia</option>
+    <option value="10">New Jersey</option>
+</select>
+<input type="button" value="Delete" onclick="DeleteStates();"/>
+<script type="text/javascript">
+    function DeleteStates()
+    {
+        var dropDown = document.getElementById("states");
+        for (var i = 0; i <= dropDown.options.length; i++)
+        {
+            if (dropDown.options[i].selected)
+            {
+                dropDown.removeChild(dropDown.options[i]);
+                break;
+            }
+        }
+    }
+</script>
+</body>
+</html>
